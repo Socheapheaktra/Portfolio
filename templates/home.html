@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <title>Doung Socheapheaktra | Portfolio</title>
+</head>
+<body class="w3-black">
+
+    <div class="w3-bar w3-black w3-xlarge w3-top" style="padding: 10px 10% 10px">
+        <span class="w3-bar-item" style="text-shadow: 2px 2px 5px white">Doung Socheapheaktra</span>
+        <button class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-right">Contact</button>
+        <button class="w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-right">Portfolio</button>
+        <button class="w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-right">About</button>
+    </div>
+
+    <main>
+        <section id="intro" style="width: 100%; min-height: 100vh; display: grid; place-items: center; text-align: center;">
+            <div class="w3-container w3-center w3-padding-32">
+                <h1 style="text-shadow: 2px 2px 5px white; font-size: 5rem">Hi, I'm Socheapheaktra</h1>
+                <h3 style="text-shadow: 2px 2px 5px white; font-size: 3rem">A Software Developer</h3>
+            </div>
+        </section>
+
+        <section id="about" style="width: 100%; min-height: 100vh; display: grid; place-items: center; text-align: center;">
+            <div class="container w3-padding-32">
+                <h2 style="text-shadow: 2px 2px 5px white; text-align: left; padding: 5px 30px; font-size: 3rem">About</h2>
+                <div class="w3-card-4 w3-round-xlarge w3-border-white w3-padding-32" style="background: #000000; box-shadow: 5px 5px 50px #d532fa">
+                    <div class="w3-container" style="display: flex">
+                        <img class="w3-round-xlarge" src="{{ url_for('static', filename='img/Me-For-About.jpg') }}" style=
+                                "
+                                width: 260px;
+                                height: 260px;
+                                object-fit: cover;
+                                box-shadow: 5px 5px 30px white;
+                                "
+                        >
+                        <p style="text-align: left; margin: 0 30px 0; font-size: 18px">
+                            I'm currently a 4<sup>th</sup> year student at SETEC INSTITUTE
+                            based in Phnom Penh, Cambodia. <br /> <br />
+                            I'm a self-taught developer most of the time
+                            as most of what being taught at school is too basic
+                            to meet the requirements of
+                            being a full-stack developer. I inject Python into my bloodstream. Most of my work are done
+                            in Python Language. I'm currently sharpening up my Python
+                            skills to build Web Apps, Desktop Apps, Mobile Apps.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container w3-padding-32">
+                <h2 style="text-shadow: 2px 2px 5px white; text-align: left; padding: 5px 30px; font-size: 3rem">Skills</h2>
+                <div class="w3-card-4 w3-round-xlarge w3-border-white w3-padding-32" style="display: flex; background: #000000; box-shadow: 5px 5px 50px #d532fa">
+                    <div class="container">
+                        <h2 style="padding: 5px 0px; text-shadow: 2px 2px 5px white">Python</h2>
+                        <h2 style="padding: 5px 0px; text-shadow: 2px 2px 5px white">Java</h2>
+                        <h2 style="padding: 5px 0px; text-shadow: 2px 2px 5px white">Git</h2>
+                    </div>
+                    <div class="container">
+                        <h2 style="padding: 5px 0px; text-shadow: 2px 2px 5px white">Bootstrap</h2>
+                        <h2 style="padding: 5px 0px; text-shadow: 2px 2px 5px white">HTML5</h2>
+                        <h2 style="padding: 5px 0px; text-shadow: 2px 2px 5px white">CSS3</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" style="width: 100%; min-height: 100vh; display: block; place-items: center; text-align: center;">
+            <h1 style="text-shadow: 2px 2px 5px white; font-size: 4rem">Portfolio</h1>
+            <div class="container w3-padding-32" style="display: flex">
+                <div class="w3-card-4 w3-round-xlarge" style="display: grid">
+                    <img src="{{ url_for('static', filename='img/video-downloader-web.png') }}"
+                        style=
+                        "
+                        width: 520px;
+                        height: 260px;
+                        overflow: hidden;
+                        border-radius: 20px;
+                        margin: 30px 0 30px;
+                        box-shadow: 5px 5px 30px #11b0c2;
+                        "
+                    >
+                    <img src="{{ url_for('static', filename='img/video-downloader-download.png') }}"
+                        style=
+                        "
+                        width: 520px;
+                        height: 260px;
+                        overflow: hidden;
+                        border-radius: 20px;
+                        margin: 30px 0 30px;
+                        box-shadow: 5px 5px 30px #11b0c2;
+                        "
+                    >
+                </div>
+                <div class="w3-container w3-center" style="margin: 30px; display: grid">
+                    <h1 style="font-size: 3rem; text-shadow: 2px 2px 5px white">Video Downloader Web</h1>
+                    <p style="margin: 50px 50px 0; text-align: left; font-size: 18px">
+                        Video Downloader is a Web App I built with Python, Flask Framework, HTML5 and CSS3.
+                        By using the "pytube" library, Python allows me to stream music from YouTube via YouTube Link
+                        and download it in mp3 or mp4 format. User can also choose the quality(resolution) of the video
+                        before downloading.
+                    </p>
+                    <div class="w3-container" style="display: flex; justify-content: center">
+                        <img src="{{ url_for('static', filename='icon/logo-python.png') }}" style="width: 50px; height: 50px; background: white; margin: 0 10px 0">
+                        <img src="{{ url_for('static', filename='icon/logo-flask.png') }}" style="width: 50px; height: 50px; background: white; margin: 0 10px 0">
+                        <img class="w3-grayscale-max" src="{{ url_for('static', filename='icon/html.svg') }}" style="width: 50px; height: 50px; background: white; margin: 0 10px 0">
+                        <img class="w3-grayscale-max" src="{{ url_for('static', filename='icon/css.svg') }}" style="width: 50px; height: 50px; background: white; margin: 0 10px 0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container w3-padding-32" style="display: flex">
+                <div class="w3-container w3-center" style="margin: 30px; display: grid">
+                    <h1 style="font-size: 3rem; text-shadow: 2px 2px 5px white">Video Downloader Desktop</h1>
+                    <p style="margin: 10px 50px 0; text-align: left; font-size: 18px">
+                        Video Downloader Desktop is a Desktop App I built purely with Python and KivyMD Framework.
+                        By using the "pytube" library, Python allows me to stream music from YouTube via YouTube Link
+                        and download it in mp3 or mp4 format. I built this so that I can download music and videos from
+                        YouTube without using any other sites that seems kinda sus.
+                    </p>
+                    <div class="w3-container" style="display: flex; justify-content: center">
+                        <img src="{{ url_for('static', filename='icon/logo-python.png') }}" style="width: 50px; height: 50px; background: white; margin: 0 10px 0">
+                        <img src="{{ url_for('static', filename='icon/kivy-md.png') }}" style="width: 50px; height: 50px; background: white; margin: 0 10px 0">
+                    </div>
+                </div>
+                <div class="w3-card-4 w3-round-xlarge" style="display: grid">
+                    <img src="{{ url_for('static', filename='img/video-downloader-desktop.png') }}"
+                        style=
+                        "
+                        width: 520px;
+                        height: 260px;
+                        overflow: hidden;
+                        border-radius: 20px;
+                        margin: 30px 0 30px;
+                        box-shadow: 5px 5px 30px #11b0c2;
+                        "
+                    >
+                    <img src="{{ url_for('static', filename='img/video-downloader-filemanagement.png') }}"
+                        style=
+                        "
+                        width: 520px;
+                        height: 260px;
+                        overflow: hidden;
+                        border-radius: 20px;
+                        margin: 30px 0 30px;
+                        box-shadow: 5px 5px 30px #11b0c2;
+                        "
+                    >
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+</body>
+</html>
